@@ -1,630 +1,463 @@
+<!--
+	作者：Sariay
+	时间：2018-09-25
+	描述：There may be a bug, but don't worry, QiLing(器灵) says that it can work normally!
+-->
 <!DOCTYPE html>
-<html lang="en">
+<html class="html-loading">
+		
 
-<!-- Head tag -->
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="www.captiondeng.com">
-    <meta name="keyword" content="null">
-    <meta name="theme-color" content="#600090">
-    <meta name="msapplication-navbutton-color" content="#600090">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="#600090">
-    <link rel="shortcut icon" href="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-person-128.png">
-    <link rel="alternate" type="application/atom+xml" title="邓鄧等灯" href="/atom.xml">
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-    <link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.css">
-    <title>
-        
-        Caption·Deng&#39;s blog
-        
-    </title>
+<head><meta name="generator" content="Hexo 3.9.0">
+	<meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+  <title>
+    
+      文章归档 | Hexo
+    
+  </title>
+  <meta name="author" content="John Doe">
+  <meta name="keywords" content>
+  <meta name="description" content>
+	<!-- favicon -->
+  <link rel="shortcut icon" href="/img/favicon.ico">
 
-    <link rel="canonical" href="http://ghdeng.github.io/archives/">
+  <!-- css -->
+  <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="/css/Annie.css">
+  
+  <!-- jquery -->
+	<script src="/js/jquery.min.js"></script>
 
-    <!-- Bootstrap Core CSS -->
-    <link rel="stylesheet" href="/css/bootstrap.min.css">
-
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="/css/blog-style.css">
-
-    <!-- Pygments Github CSS -->
-    <link rel="stylesheet" href="/css/syntax.css">
+  <!-- leancloud -->
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
+<script src="/js/leancloud.js"></script>
 </head>
+	<body>
+		<!-- Preloader -->
 
-<style>
+	<div id="preloader">
+		<div class="pre-container">
+			
+				<div class="spinner">
+					<div class="double-bounce1"></div>
+					<div class="double-bounce2"></div>
+				</div>
+						
+		</div>
+	</div>
 
-    header.intro-header {
-        background-image: url('20161130.png')
-    }
+
+<!-- header -->
+<header class="fixbackground" data-img-mode="normal" data-normal-src="/img/1.jpg" data-random-max="110" data-random-src="https://sariay.github.io/Random-img/">
+	<div class="mask">
+		<!-- Logo and navigation -->
+		<div class="h-header">
+			<div id="logo">
+				<a href="/">
+						
+						<img src="/img/logo.png" alt="Logo">
+					
+				</a>
+			</div>
+			
+			<div id="navigation-show">
+				<ul>
+	
+		<li class="menu-home">
+			<a href="/" class="menu-item-home">主页</a>
+		</li>
+	
+		<li class="menu-archive">
+			<a href="/archives" class="menu-item-archive">归档</a>
+		</li>
+	
+		<li class="menu-categories">
+			<a href="/categories" class="menu-item-categories">分类</a>
+		</li>
+	
+		<li class="menu-tags">
+			<a href="/tags" class="menu-item-tags">标签</a>
+		</li>
+	
+		<li class="menu-about">
+			<a href="/about" class="menu-item-about">关于</a>
+		</li>
+	
+		<li class="menu-gallery">
+			<a href="/gallery" class="menu-item-gallery">相册</a>
+		</li>
+	
+
+	
+</ul>
+			</div>				
+		</div>
+
+		<!-- motto -->
+		<div class="h-body">	
+			
+				<p class="motto"></p>
+			
+		</div>
+		
+		<!-- others: such as time... -->			
+		<div class="h-footer">
+			<a href="javascript:;" id="read-more"><i class="fa fa-angle-double-down" aria-hidden="true"></i>
+			</a>
+
+			
+				<!-- 
+	This is only a demo, please go to "https://time.is" to set your city time! 
+-->
+<style type="text/css">
+	.header-date {
+		font-size: 1.6rem;
+		color: #fff;
+		position: absolute;
+		bottom: 5px;
+		right: 1rem;
+		writing-mode: tb-rl;
+	}	
+	
+	.header-date a {
+		border-bottom: none;
+	}
+
+	@media only screen and (max-width: 768 ) {
+		.header-date {
+			font-size: 1rem;
+		}			
+	}
 </style>
-<!-- hack iOS CSS :active style -->
-<body ontouchstart="" class="animated fadeIn">
-<!-- Navigation -->
-<nav class="navbar navbar-default navbar-custom navbar-fixed-top " id="nav-top" data-ispost = "false" data-istags="false
-" data-ishome = "false" >
-    <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header page-scroll">
-            <button type="button" class="navbar-toggle">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand animated pulse" href="/">
-                <span class="brand-logo">
-                    邓鄧等灯
-                </span>
-                's Blog
-            </a>
-        </div>
-
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <!-- Known Issue, found by Hux:
-            <nav>'s height woule be hold on by its content.
-            so, when navbar scale out, the <nav> will cover tags.
-            also mask any touch event of tags, unfortunately.
-        -->
-        <!-- /.navbar-collapse -->
-        <div id="huxblog_navbar">
-            <div class="navbar-collapse">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="/">Home</a>
-                    </li>
-					
-                    
-                        
-							
-                        <li>
-                            <a href="/About/">About</a>
-                        </li>
-							
-						
-                    
-                        
-							
-                        <li>
-                            <a href="/Tags/">Tags</a>
-                        </li>
-							
-						
-                    
-					
-					
-                </ul>
-            </div>
-        </div>
-    </div>
-    <!-- /.container -->
-</nav>
+<div class="header-date">
+	<a href="https://time.is/Beijing" id="time_is_link" rel="nofollow" ></a>
+	<span id="Beijing_z43d"></span>
+</div>
+<script src="//widget.time.is/zh.js"></script>
 <script>
-    // Drop Bootstarp low-performance Navbar
-    // Use customize navbar with high-quality material design animation
-    // in high-perf jank-free CSS3 implementation
-//    var $body   = document.body;
-    var $toggle = document.querySelector('.navbar-toggle');
-    var $navbar = document.querySelector('#huxblog_navbar');
-    var $collapse = document.querySelector('.navbar-collapse');
-
-    $toggle.addEventListener('click', handleMagic)
-    function handleMagic(e){
-        if ($navbar.className.indexOf('in') > 0) {
-        // CLOSE
-            $navbar.className = " ";
-            // wait until animation end.
-            setTimeout(function(){
-                // prevent frequently toggle
-                if($navbar.className.indexOf('in') < 0) {
-                    $collapse.style.height = "0px"
-                }
-            },400)
-        }else{
-        // OPEN
-            $collapse.style.height = "auto"
-            $navbar.className += " in";
-        }
-    }
+	time_is_widget.init({
+		Beijing_z43d:{
+			template:"DATE", 
+			date_format:"year年 monthname dnum日"
+		}
+	});
 </script>
+			
+		</div>
+	</div>
+</header>
 
-<!-- Main Content -->
+<div id="navigation-hide">
+	<!-- Progress bar -->
+	<div id="progress-bar"></div>
 
+	<!-- Progress percent -->
+	<div id="progress-percentage"><h1>0.0%</h1></div>
 
-<!-- Page Header -->
-<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 visible-xs-block visible-sm-block">
-    <div class="row">
-        <header class="intro-header">
-            <div class="container">
-                <div class="site-heading text-center">
-                    <div class="about-me">
-                        <!--移动端头部显示-->
-                        <img src="head.jpg"/>
-                        <h5><a href="/about/">Caption·Deng</a></h5>
-                        <p>每一个不满意的现在都有一个没有努力的曾经！</p>
-                    </div>
-                </div>
-            </div>
-        </header>
-    </div>
-</div>
-<!-- Main Content -->
-<div class="container custom-haojen-container">
-    <!-- Post Container -->
-    <div class="row">
-        <div class="col-lg-8 col-lg-offset-1 col-md-8 col-md-offset-1 col-sm-12 col-xs-12 post-container">
-            <!-- Main Content -->
+	<div class="toc-switch"><span class="switch-button">目录</span></div>
 
+	<!-- Page title -->
+	<p>
+		
+			文章归档
+		
+	</p>
 
-
-<div class="post-preview "
-     style="background-image: url('http://ohg8lvbza.bkt.clouddn.com/img/defout_bg1')">
-    <a href="/2016/12/01/hello/">
-        <h2 class="post-title">
-            Android自定义控件--评分星级View
-        </h2>
-        <p class="post-meta">
-            <i class="fa fa-calendar" aria-hidden="true"></i> 2016-12-01
-        </p>
-        
-        <div class="post-content-preview">
-            <p>
-                hellowhaode 
-enen
-
-hao
- zhongjian
-
-buhao
-
-
-
-            </p>
-        </div>
-    </a>
-
+	<!-- Nav trigger for navigation-H-->
+	<a class="nav-trigger"><span></span></a>
 </div>
 
-<hr>
+<!-- Navigation in div(id="navigation-H") -->
+<nav class="nav-container" id="cd-nav">
+	<div class="nav-header">
+		<h3>Navigation</h3>
+		<a href="javascript:;" class="nav-close"></a>
+	</div>
+	<div class="nav-body">
+		<ul>
+	
+		<li class="menu-home">
+			<a href="/" class="menu-item-home">主页</a>
+		</li>
+	
+		<li class="menu-archive">
+			<a href="/archives" class="menu-item-archive">归档</a>
+		</li>
+	
+		<li class="menu-categories">
+			<a href="/categories" class="menu-item-categories">分类</a>
+		</li>
+	
+		<li class="menu-tags">
+			<a href="/tags" class="menu-item-tags">标签</a>
+		</li>
+	
+		<li class="menu-about">
+			<a href="/about" class="menu-item-about">关于</a>
+		</li>
+	
+		<li class="menu-gallery">
+			<a href="/gallery" class="menu-item-gallery">相册</a>
+		</li>
+	
 
-
-
-<div class="post-preview "
-     style="background-image: url('http://ohg8lvbza.bkt.clouddn.com/blog/ghdeng/defout_bg2.png')">
-    <a href="/2016/11/20/20161120/">
-        <h2 class="post-title">
-            解决Android百度自动更新SDK和360自动更新SDK兼容
-        </h2>
-        <p class="post-meta">
-            <i class="fa fa-calendar" aria-hidden="true"></i> 2016-11-20
-        </p>
-        
-        <div class="post-content-preview">
-            <p>
-                解决Android百度自动更新SDK和360自动更新SDK兼容
-最近上架的一个项目相序的被百度平台和360平台下架，郁闷的同时只能询问客服，得到的回复都是‘**平台的自动更新SDK会在您系统自动安装有害系统的软件，请使用本平台提供的更新SDK’，强制使用它平台的更新外还不可以兼容其他平台，对于这..
-            </p>
-        </div>
-    </a>
-
-</div>
-
-<hr>
-
-
-
-<div class="post-preview "
-     style="background-image: url('http://ohg8lvbza.bkt.clouddn.com/blog/ghdeng/defout_bg4.png')">
-    <a href="/2016/10/17/20161017/">
-        <h2 class="post-title">
-            Python 学习（二） -- 初试抓取动车事件表
-        </h2>
-        <p class="post-meta">
-            <i class="fa fa-calendar" aria-hidden="true"></i> 2016-10-17
-        </p>
-        
-        <div class="post-content-preview">
-            <p>
-                Python 学习（二） – 初试抓取动车事件表#没图没真相：
-#确定需求
-
-查询某日A到B地的列车班次，显示时间、地点、历时等信息
-通过：Python3 run_railway.py [-gdtkz] \ \ \ 调用查询
-
-#数据分析
-1.通过分析12306网站查询获取Json数据，格式：
-..
-            </p>
-        </div>
-    </a>
-
-</div>
-
-<hr>
-
-
-
-<div class="post-preview "
-     style="background-image: url('http://ohg8lvbza.bkt.clouddn.com/blog/ghdeng/defout_bg3.png')">
-    <a href="/2016/10/15/20161015/">
-        <h2 class="post-title">
-            Python 学习（一）-- 初识
-        </h2>
-        <p class="post-meta">
-            <i class="fa fa-calendar" aria-hidden="true"></i> 2016-10-15
-        </p>
-        
-        <div class="post-content-preview">
-            <p>
-                Python 学习（一）– 初识面对着未知的领域总是充满着无限的好奇，自己作为一名纯Android客户端开发者来说对服务的的了解甚少，总感觉客户端脱离了服务的数据后就等于缺了胳膊少了腿似的，于是偶然的机会了解到Python的数据爬虫，于是决定潜心学习一番。
-1.Python基础我是在菜鸟教程里面..
-            </p>
-        </div>
-    </a>
-
-</div>
-
-<hr>
-
-
-
-<div class="post-preview "
-     style="background-image: url('http://ohg8lvbza.bkt.clouddn.com/blog/ghdeng/defout_bg2.png')">
-    <a href="/2016/10/01/20160931/">
-        <h2 class="post-title">
-            对OkHttp3请求库简单封装适配Json-Rpc调用协议
-        </h2>
-        <p class="post-meta">
-            <i class="fa fa-calendar" aria-hidden="true"></i> 2016-10-01
-        </p>
-        
-        <div class="post-content-preview">
-            <p>
-                对OkHttp3请求库简单封装适配Json-Rpc调用协议———主要对Json-Rpc结构封装，同时保留post，get请求，加入文件图片download。回调形式Gson，Json，String等。
-#技术简介json-rpc是基于json的跨语言远程调用协议，比xml-rpc、webserv..
-            </p>
-        </div>
-    </a>
-
-</div>
-
-<hr>
-
-
-
-<div class="post-preview "
-     style="background-image: url('http://ohg8lvbza.bkt.clouddn.com/blog/ghdeng/defout_bg1.png')">
-    <a href="/2016/09/30/20160930/">
-        <h2 class="post-title">
-            使用广播监听网络变化
-        </h2>
-        <p class="post-meta">
-            <i class="fa fa-calendar" aria-hidden="true"></i> 2016-09-30
-        </p>
-        
-        <div class="post-content-preview">
-            <p>
-                使用广播监听网络变化#需求确认
-
-监听当前网络的状态和类型
-类似京东客户端，当网络发生变化时相应更新UI界面
-
-
-github地址：https://github.com/GHdeng/NetMonitor
-#制作流程
-
-使用广播监听当前网络的状态。
-配合Application周期注册监听，使得每..
-            </p>
-        </div>
-    </a>
-
-</div>
-
-<hr>
-
-
-
-<div class="post-preview "
-     style="background-image: url('http://ohg8lvbza.bkt.clouddn.com/blog/ghdeng/defout_bg4.png')">
-    <a href="/2016/08/30/20160831/">
-        <h2 class="post-title">
-            Android自定义控件--评分星级View
-        </h2>
-        <p class="post-meta">
-            <i class="fa fa-calendar" aria-hidden="true"></i> 2016-08-30
-        </p>
-        
-        <div class="post-content-preview">
-            <p>
-                #Android自定义控件–评分星级View    在开发电商项目中经常都会遇到一些星级评分控件的需求，有需求就必然有开发。废话不多说，没图没真相，上图：   
-#确定需求：
-
-可以控制子item之间的边距
-自定义选中图片和未选中图片
-摆放纵向或者横向
-可选择选中数量
-
-#基本绘制流程：
-
-1 ..
-            </p>
-        </div>
-    </a>
-
-</div>
-
-<hr>
-
-
-
-<div class="post-preview "
-     style="background-image: url('http://ohg8lvbza.bkt.clouddn.com/blog/ghdeng/defout_bg3.png')">
-    <a href="/2016/08/29/20160830/">
-        <h2 class="post-title">
-            使用Jenkins搭建Android自动化构建--配置篇--windows
-        </h2>
-        <p class="post-meta">
-            <i class="fa fa-calendar" aria-hidden="true"></i> 2016-08-29
-        </p>
-        
-        <div class="post-content-preview">
-            <p>
-                #使用Jenkins搭建Android自动化构建–配置篇–windows
-这个不扯皮，既然环境都配好了，那上来就是干！
-
-本文使用Jenkins+gradle+svn搭建
-不管是用虚拟机安装的环境还是本机安装，默认配置都是你的ip地址加上8080端口进入Jenkins首页，至于如何修改Jenk..
-            </p>
-        </div>
-    </a>
-
-</div>
-
-<hr>
-
-
-
-
-<!-- 翻页 pager -->
-
-<ul class="pager">
-    
-    
-    <li class="next">
-        <a href="/archives/page/2/">Older Posts &rarr;</a>
-    </li>
-    
+	
+</ul>
+	</div>
+	<div class="nav-footer">
+		<ul>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<i class="fa fa-github"></i>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<i class="fa fa-weibo"></i>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<i class="fa fa-pinterest"></i>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<i class="fa fa-instagram"></i>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<i class="fa fa-twitter"></i>
+			</a>
+		</li>
+	
+		<li>
+			<a href="/atom.xml" target="_blank">
+				<i class="fa fa-rss"></i>
+			</a>
+		</li>
+			
 </ul>
 
+	</div>
+</nav>
+			
+		<!--main-->
+		<main>
+			<!--
+	时间：2018-11-08
+	描述：The archive module refers to 'https://1984n.win/archives-post/' & 'http://1900.live/one-theme/', include js、css. Relevant rights reserved by them! 
+-->
+<div class="layout-archive">
+    <div class="i-container">
+        <i class="fa fa-book">
+			<!--
+	Post number counter for archive.ejs.  
+-->
 
-        </div>
-        <!-- Sidebar Container -->
-        <div class="
-                col-lg-3 col-lg-offset-0
-                col-md-3 col-md-offset-0
-                col-sm-12
-                col-xs-12
-                sidebar-container
-            ">
+	
+	总计 1 篇 文章
+	
 
-            <!-- About Me -->
-            <section class="visible-md visible-lg" style="padding: 0 18px">
-                <div class="short-about">
-                    <!--侧边栏头像-->
-                    
-                    <img src="head.jpg"/>
-                    
-                    <h5><a href="/about/">Caption·Deng</a></h5>
-                    
-                    <p>每一个不满意的现在都有一个没有努力的曾经！</p>
-                    
-                    <hr>
-                    <!-- SNS Link 社交 -->
-                    <ul class="list-inline">
-                        
-                        
-                        
-                        <li>
-                            <a target="_blank" href="https://www.zhihu.com/people/ghdeng">
-                                        <span class="fa-stack fa-lg">
-                                            <i class="fa fa-circle fa-stack-2x"></i>
-                                            <i class="fa  fa-stack-1x fa-inverse">知</i>
-                                        </span>
-                            </a>
-                        </li>
-                        
+		</i>
+    </div>
 
-                        
-
-                        
-
-                        
-                        <li>
-                            <a target="_blank" href="https://github.com/ghdeng">
-                                        <span class="fa-stack fa-lg">
-                                            <i class="fa fa-circle fa-stack-2x"></i>
-                                            <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-                                        </span>
-                            </a>
-                        </li>
-                        
-
-                        
-                    </ul>
-                </div>
-            </section>
-
-            <!-- Featured Tags  标签 -->
+    <!-- Archive by year, display in page( archive ) -->
+    <div id="layout-archive-year" style="display: 
+                 	
+            block">        
+        
+        
+        <ul>
             
-            <section>
-                <div class="tags">
-                    
-                    
-                    <a href="/tags/#Android" title="Android"
-                       rel="7">Android</a>
-                    
-                    
-                    
-                    <a href="/tags/#Jenkins" title="Jenkins"
-                       rel="2">Jenkins</a>
-                    
-                    
-                    
-                    <a href="/tags/#Python" title="Python"
-                       rel="2">Python</a>
-                    
-                    
-                    
-                    
-                </div>
-            </section>
+                <li>
+                    <a href="/2019/07/12/hello-world/">
+            			<em year="2019">
+                            07-12
+                        </em>
+        			    <span itemprop="name">
+                            Hello World
+                        </span>
+        			    
+                    </a>
+                </li>
+            
+        </ul>
+    </div>
+
+     <!-- Archive by month, called by page( categories, tags... ) -->
+    <div id="layout-archive-month" style="display: 
+         
+            none"> 
+        
+
+        
+        
             
 
             
-            <hr>
-            <h5 style="text-align: center;">Friends</h5>
-            <ul class="list-inline" style="text-align: center;">
                 
-                <li><a href="http://haojen.github.io/" target="_blank">Haojen Ma</a></li>
-                
+                <h3 class="archive-year">
+                    <!-- <a href="/archives/2019/07"> -->
+                    <a>
+                        2019 - 07
+                    </a>
+                </h3>
+            
+
+            <ul>
+                <li>
+                    <a href="/2019/07/12/hello-world/">
+                        <em>
+                            07-12
+                        </em>
+                        <span itemprop="name">
+                            Hello World
+                        </span>
+                               
+                    </a>
+                </li>
             </ul>
-            
-
-        </div>
+        
     </div>
+
+    
 </div>
+		</main>
 
-<!-- Footer -->
-<!-- Footer -->
-<footer>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 text-center">
-                <br>
-                <ul class="list-inline text-center">
-                
-                
-                
-                    <li>
-                        <a target="_blank" href="https://www.zhihu.com/people/ghdeng">
-                            <span class="fa-stack fa-lg">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa  fa-stack-1x fa-inverse">知</i>
-                            </span>
-                        </a>
-                    </li>
-                
+		<!--footer-->
+		<footer>
+	<div class="social">
+		<ul>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<i class="fa fa-github"></i>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<i class="fa fa-weibo"></i>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<i class="fa fa-pinterest"></i>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<i class="fa fa-instagram"></i>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<i class="fa fa-twitter"></i>
+			</a>
+		</li>
+	
+		<li>
+			<a href="/atom.xml" target="_blank">
+				<i class="fa fa-rss"></i>
+			</a>
+		</li>
+			
+</ul>
 
-                
+	</div>
+		
+	<div class="copyright">
+		<p>
+			 
+				&copy;2017 - 2019, content by John Doe. All Rights Reserved.
+			
+			
+			
 
-                
+	<!-- busuanzi -->
+	<!-- busuanzi -->
 
-                
-                    <li>
-                        <a target="_blank"  href="https://github.com/ghdeng">
-                            <span class="fa-stack fa-lg">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-                            </span>
-                        </a>
-                    </li>
-                
+		
+	<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+	
 
-                
+		<span id="busuanzi_container_site_pv">
+	    	本站总访问量<span id="busuanzi_value_site_pv"></span>次
+		</span>
 
-                </ul>
-                <p class="copyright text-muted">
-                    Copyright &copy; 邓鄧等灯 2016
-                    <br>
-                    <span id="busuanzi_container_site_pv" style="font-size: 12px;">PV: <span id="busuanzi_value_site_pv"></span> Times</span>
-                    <br>
-                    Theme by <a href="https://haojen.github.io/">Haojen Ma</a>
-                </p>
+		<span id="busuanzi_container_site_uv">
+	  		本站访客数<span id="busuanzi_value_site_uv"></span>人次
+		</span>
+		
+	
 
-            </div>
-        </div>
-    </div>
+
+
+
+		</p>
+		<p>
+			<a href="http://hexo.io/" title="Hexo" target="_blank" rel="noopener">Hexo</a> Theme <a href="https://github.com/Sariay/hexo-theme-Annie" title="Annie" target="_blank" rel="noopener">Annie</a> by Sariay.
+			<a href="javascript:zh_tran('s');" class="zh_click" id="zh_click_s">简体</a> 
+			<a href="javascript:zh_tran('t');" class="zh_click" id="zh_click_t">繁體</a>				
+		</p>
+	</div>		
 </footer>
+		
+	<!-- set '1' to show motto in all pages! -->
 
-<!-- jQuery -->
-<script src="/js/jquery.min.js"></script>
-
-<!-- Bootstrap Core JavaScript -->
-<script src="/js/bootstrap.min.js"></script>
-
-<!-- Custom Theme JavaScript -->
-<script src="/js/blog.js"></script>
-
-<!-- async load function -->
-<script>
-    function async(u, c) {
-      var d = document, t = 'script',
-          o = d.createElement(t),
-          s = d.getElementsByTagName(t)[0];
-      o.src = u;
-      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
-      s.parentNode.insertBefore(o, s);
-    }
-</script>
-
-<!-- jquery.tagcloud.js -->
-<script>
-    // only load tagcloud.js in tag.html
-    if($('#tag_cloud').length !== 0){
-        async("http://ghdeng.github.io/js/jquery.tagcloud.js",function(){
-            $.fn.tagcloud.defaults = {
-                //size: {start: 1, end: 1, unit: 'em'},
-                color: {start: '#bbbbee', end: '#0085a1'},
-            };
-            $('#tag_cloud a').tagcloud();
-        })
-    }
-</script>
-
-<!--fastClick.js -->
-<script>
-    async("//cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js", function(){
-        var $nav = document.querySelector("nav");
-        if($nav) FastClick.attach($nav);
-    })
-</script>
-
-<!-- Google Analytics -->
+	<script src="/plugin/motto/motto.js"></script>
+	
+	<script type="text/javascript">
+		$(".motto").html( getMingYanContent() );
+	</script>	
 
 
 
-<!-- Baidu Tongji -->
-
-<script>
-    var _baId = '5636b1b753434900df097a9845e115cb';
-    // Originial
-    var _hmt = _hmt || [];
-    (function() {
-        var hm = document.createElement("script");
-        hm.src = "//hm.baidu.com/hm.js?" + _baId;
-        var s = document.getElementsByTagName("script")[0];
-        s.parentNode.insertBefore(hm, s);
-    })();
-</script>
 
 
-<!-- swiftype -->
-<script type="text/javascript">
-  (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
-  (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
-  e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
-  })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
+<!-- love effect -->
 
-  _st('install','null','2.0.0');
-</script>
+	<script src="/plugin/love/love.js"></script>
 
-<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
-<!--wechat title img-->
-<img class="wechat-title-img" src="head.jpg">
-</body>
+<!-- back to top -->
 
+	
+	<div id="totop">
+  		<a href="javascript:;"  name="TOTOP" class="fa fa-arrow-up" ></a>
+	</div>
+
+
+
+
+<!-- site analysis -->
+
+
+	<!-- site-analysis -->
+	
+	
+	
+	
+	
+ 
+
+<script src="/plugin/vibrant/vibrant.js"></script>
+<script src="/plugin/chinese/chinese.js"></script>
+<script src="/plugin/imgLazyLoader/yall.min.js"></script>
+<script src="/plugin/imgResize/jquery.resizeimagetoparent.min.js"></script>
+<script src="/plugin/nicescroll/jquery.nicescroll.js"></script>
+<script src="/js/resizediv.js"></script>
+<script src="/js/main.js"></script>
+	</body>	
 </html>
